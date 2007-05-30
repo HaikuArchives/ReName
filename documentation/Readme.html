@@ -1,0 +1,167 @@
+<html>
+<head>
+<title>ReName!</title>
+</head>
+<body bgcolor="#325A91" text="#FFFFFF" link="#AFAFAF" vlink="#000000">
+<a name="top"></a>
+
+<table>
+	<tr>
+		<td valign="top">
+			<img src="images/rename_icon.gif" alt="ReName! Icon">
+		</td>
+		<td valign="bottom">
+			<h1><a href="http://www.flipsidesoftware.com/products/beos/rename/">ReName!</a></h1>
+		</td>
+	</tr>
+</table>
+
+<p>
+<b><big>Table of Contents</big></b>
+<ul>
+<li><a href="Readme.html#description">Description</a></li>
+<li><a href="Readme.html#installation">Installation</a></li>
+<li><a href="Readme.html#opening">Opening</a></li>
+<li><a href="Readme.html#use">Use</a></li>
+<ul>
+	<li><a href="Readme.html#change_basename">Change Basename</a></li>
+	<li><a href="Readme.html#change_extension">Change Extension</a></li>
+	<li><a href="Readme.html#change_case">Change Case</a></li>
+	<li><a href="Readme.html#search_replace">Search &amp; Replace</a></li>
+</ul>
+<li><a href="Readme.html#definitions">Definitions</a></li>
+</ul>
+<a name="description"><b><big>Description:</big></b></a>
+<a href="Readme.html#top">[top]</a>
+<blockquote>
+ReName! is THE Tracker Add-On for BeOS users.  It provides you with a way to
+rename multiple files at once.  ReName! allows you to add, remove or change
+file extensions.  It also allows you to change the capitialization of your
+files, and do a search and replace on your file names. ReName! also allows you
+to prepend or append text to multiple file names!
+</blockquote>
+
+<a name="installation"><b><big>Installation:</big></b></a>
+<a href="Readme.html#top">[top]</a>
+<blockquote>
+Well, you've obviously managed to unzip the file. That was the hard part!
+Now drag the addon to (you guessed it) the folder that says Drag here to
+install!  You're done!
+</blockquote>
+
+<a name="opening"><b><big>Opening:</big></b></a>
+<a href="Readme.html#top">[top]</a>
+<ul>
+<li>
+Right click on the Tracker, Select Add-Ons, Then Select ReName.
+</li>
+<li>
+Press &lt;ALT&gt;-&lt;OPT&gt;-&lt;SHORTCUT KEY&gt; where &lt;SHORTCUT KEY&gt;
+is R by default, but can be changed by simply renaming the Add-On to
+ReName-&lt;NEW SHORTCUT KEY&gt;.
+</li>
+</ul>
+<a name="use"><b><big>Use:</big></b></a>
+<a href="Readme.html#top">[top]</a>
+<blockquote>
+There are now two ways to use ReName!
+<ul>
+<li> Select the entries that you want to rename and open ReName!</li>
+<li>Open ReName!, then select the entries you want to rename, and drag them
+onto ReName!</li>
+</ul>
+</blockquote>
+
+<a name="change_basename"><b>Change Basename is checked.</b></a>
+<a href="Readme.html#top">[top]</a>
+<blockquote>
+If multiple files were selected, when you hit the ReName! button,
+the entry names will be changed to whatever you had in the basename
+field plus a number.  If the entry had an extension previous to this,
+it will have the same extension after this.
+<p>
+If only a single file was selected, you will get whatever you typed in
+the basename field plus whatever extension it had before (if it had one).
+<p>
+HINT:  If you leave the basename empty in this mode, your files will have
+names like 001.ext,002.ext,etc.
+<p>
+HINT: You can now use an asterisk (*) as a wildcard character.  ReName! will
+replace all occurences of * with the original basename.  This allows
+for easy prefixing and postfixing of strings to a basename.
+</blockquote>
+
+<a name="change_extention"><b>Change Extension is checked.</b></a>
+<a href="Readme.html#top">[top]</a>
+<blockquote>
+This mode leaves the basename alone.  If you have two files with the same
+basename and different extensions, the operation will succeed for the 
+first file, but issue an alert for the second file.  The alert allows you
+kill the first file by "ReName Anyway!" or "Don't Do It!" for
+THAT FILE ONLY!
+
+HINT: If you want to get rid of the extensions on some files you brought
+over from that other OS, use this mode, and leave the Extension field
+blank.
+</blockquote>
+
+<a name="change_case"><b>Change Case is checked.</b></a>
+<a href="Readme.html#top">[top]</a>
+<blockquote>
+This is a modifier to the current mode.  When Change case is checked, it
+doesn't matter what case you typed the basename and/or extension in, the
+entire filename will be in UPPER case, lower case, or Capitalize Each Word
+depending on your choice.  A note on Capitalize Each Word:
+The following characters are considered for breaking words:
+<ul>
+<li>space [ ]</li>
+<li>underscore [_]</li>
+<li>parens [(,)]</li>
+<li>less than &amp; greater than [&lt;,&gt;]</li>
+<li>brackets [[,]]</li>
+<li>braces [{,}]</li>
+<li>ampersand [&amp;]</li>
+<li>dash [-]</li>
+<li>comma [,]</li>
+</ul>
+
+If a "word" begins with "Mc" then it will be capitalized as such.  The same
+cannot be done with "Mac" because of words like "Machine".  Because ReName!
+splits filenames into basename + extension on the LAST "." in the name a
+file with a name like "jason a. burgess" will end up looking like
+"Jason A. burgess".  There currently is no desirable workaround other than
+manually fixing the few files this applies to.
+</blockquote>
+
+<a name="search_replace"><b>Search &amp; Replace is checked.</b></a>
+<a href="Readme.html#top">[top]</a>
+<blockquote>
+This is a modifier to the current mode.  When Search &amp; Replace is checked,
+it searchs for the text in the search box and replaces it with the text in the
+replace box.  This is applied last and IS case sensitive.
+</blockquote>
+
+<a name="definitions"><b><big>Definitions:</big></b></a>
+<a href="Readme.html#top">[top]</a>
+<dl>
+<dt>Basename</dt>
+<dd>The part of an entry's name that preceeds the last '.'</dd>
+<dt>Extension</dt>
+<dd>The part of an entry's name following the last '.'</dd>
+<dt>Entry</dt>
+<dd>A file or directory.</dd>
+<p>
+<b><big>Bug Reports, Feature Requests, Letters of Encouragement:</big></b>
+<blockquote>
+Please send any of the preceding to <a href="mailto:rename@flipsidesoftware.com">rename@flipsidesoftware.com</a>
+</blockquote>
+
+<b><big>Thanks:</big></b>
+<blockquote>
+Copland for designing the icon.<br>
+Kurt von Finck for bringing the icon to BeOS.<br>
+Be for THE Operating System.<br>
+Everyone else in the BeOS community for making it what it is.<br>
+</blockquote>
+</body>
+</html>
