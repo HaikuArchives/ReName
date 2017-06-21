@@ -10,7 +10,7 @@
  *
  */
 
-#include <iostream.h>
+#include <iostream>
 #include <be/add-ons/tracker/TrackerAddOn.h>
 #include <be/app/Application.h>
 #include <be/app/Message.h>
@@ -59,11 +59,12 @@ process_refs(entry_ref dir_ref, BMessage* msg, void* reserved)
 	wait_for_thread(thread, &win_status);     
 }
 
-void
+int
 main()
 {
 	PRINT(("main()\n"));
 	new Application();
 	be_app->Run();
 	delete be_app;
+	return 0;
 }

@@ -19,9 +19,9 @@ DragDropView::DragDropView(BRect frame) : BView(frame,"DragDropView",
 
 	SetViewColor(ui_color(B_PANEL_BACKGROUND_COLOR));
 
-	BRect frame = Bounds();
-	frame.InsetBy(10,10);
-	dragDropBox = new BBox(frame,"dragDropBox",B_FOLLOW_ALL);
+	BRect bounds = Bounds();
+	bounds.InsetBy(10,10);
+	dragDropBox = new BBox(bounds,"dragDropBox",B_FOLLOW_ALL);
 	dragDropBox->SetLabel(LABEL);
 	AddChild(dragDropBox);
 }
