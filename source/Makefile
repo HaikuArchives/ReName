@@ -1,4 +1,4 @@
-EXECUTABLE = ReName\!-R
+EXECUTABLE = ReName
 
 HDRS =	Application.h\
   			AppDefs.h\
@@ -18,7 +18,8 @@ SRCS =	driver.cpp\
 
 OBJS = $(SRCS:.cpp=.o)
 
-RSRCS = ReName.rsrc
+RSRCS =ReName.rsrc
+
 
 LIBS = -lbe -lroot
 
